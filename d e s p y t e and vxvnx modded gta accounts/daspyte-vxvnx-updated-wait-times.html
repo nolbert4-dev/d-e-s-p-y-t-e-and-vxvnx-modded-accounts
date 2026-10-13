@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="D a s p y t e and vxvnx PC GTA Online account listings">
+  <title>D a s p y t e and vxvnx | PC Accounts</title>
+
+  <style>
+    :root {
+      --bg: #080b10;
+      --surface: #111720;
+      --surface-2: #19212c;
+      --text: #f4f7fb;
+      --muted: #9ca8b7;
+      --green: #62f59b;
+      --green-dark: #24bd63;
+      --border: rgba(255, 255, 255, 0.1);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 80% 5%, rgba(98, 245, 155, 0.12), transparent 28rem),
+        radial-gradient(circle at 10% 35%, rgba(81, 108, 255, 0.1), transparent 32rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 11, 16, 0.82);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #06110a;
+      background: linear-gradient(135deg, var(--green), var(--green-dark));
+      box-shadow: 0 0 30px rgba(98, 245, 155, 0.22);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .cart-button,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 0 19px;
+      border: 0;
+      border-radius: 13px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: 180ms ease;
+    }
+
+    .cart-button {
+      min-height: 42px;
+      color: var(--text);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+    }
+
+    .cart-count {
+      min-width: 23px;
+      height: 23px;
+      display: grid;
+      place-items: center;
+      padding: 0 6px;
+      border-radius: 20px;
+      color: #06110a;
+      background: var(--green);
+      font-size: 0.78rem;
+    }
+
+    .button-primary {
+      color: #051009;
+      background: linear-gradient(135deg, var(--green), var(--green-dark));
+      box-shadow: 0 12px 35px rgba(36, 189, 99, 0.22);
+    }
+
+    .button-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(36, 189, 99, 0.32);
+    }
+
+    .button-secondary {
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .button-secondary:hover {
+      background: var(--surface-2);
+    }
+
+    .hero {
+      padding: 100px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      align-items: center;
+      gap: 58px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      padding: 8px 12px;
+      border: 1px solid rgba(98, 245, 155, 0.24);
+      border-radius: 100px;
+      color: var(--green);
+      background: rgba(98, 245, 155, 0.07);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 16px var(--green);
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(3.2rem, 7vw, 6.8rem);
+      line-height: 0.94;
+      letter-spacing: -0.07em;
+    }
+
+    h1 span {
+      color: var(--green);
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin: 28px 0 32px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .trust-row span::before {
+      content: "✓";
+      margin-right: 8px;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 490px;
+      display: flex;
+      align-items: flex-end;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background:
+        linear-gradient(to top, rgba(3, 6, 9, 0.96), rgba(3, 6, 9, 0.06)),
+        linear-gradient(135deg, #273127, #171e26 45%, #273f32);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::before,
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(1px);
+    }
+
+    .hero-card::before {
+      width: 330px;
+      height: 330px;
+      top: -80px;
+      right: -80px;
+      background: rgba(98, 245, 155, 0.18);
+    }
+
+    .hero-card::after {
+      width: 240px;
+      height: 240px;
+      top: 105px;
+      left: -100px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .city-lines {
+      position: absolute;
+      inset: 35% 0 0;
+      opacity: 0.3;
+      background:
+        linear-gradient(90deg, transparent 8%, #62f59b 8% 9%, transparent 9% 20%, #fff 20% 20.4%, transparent 20.4%),
+        linear-gradient(0deg, transparent 10%, rgba(255,255,255,.3) 10% 11%, transparent 11% 30%, rgba(98,245,155,.3) 30% 31%, transparent 31%);
+      transform: perspective(500px) rotateX(64deg) scale(1.8);
+    }
+
+    .hero-card-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .level-badge {
+      display: inline-block;
+      padding: 7px 11px;
+      border-radius: 9px;
+      color: var(--green);
+      background: rgba(98, 245, 155, 0.11);
+      font-weight: 800;
+    }
+
+    .hero-card h2 {
+      margin-top: 12px;
+      font-size: 2.1rem;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-card-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(13, 18, 24, 0.76);
+      backdrop-filter: blur(12px);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1rem;
+    }
+
+    .stat small {
+      color: var(--muted);
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .section-heading p {
+      max-width: 510px;
+      color: var(--muted);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(160deg, rgba(25, 33, 44, 0.95), rgba(14, 19, 26, 0.95));
+      box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
+    }
+
+    .product-card.featured {
+      border-color: rgba(98, 245, 155, 0.55);
+      transform: translateY(-8px);
+    }
+
+    .popular {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 6px 10px;
+      border-radius: 100px;
+      color: #06110a;
+      background: var(--green);
+      font-size: 0.72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .product-kicker {
+      margin-bottom: 8px;
+      color: var(--green);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    .product-card h3 {
+      font-size: 1.55rem;
+      letter-spacing: -0.03em;
+    }
+
+    .price {
+      margin: 16px 0;
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .features {
+      display: grid;
+      gap: 11px;
+      margin: 5px 0 26px;
+      color: var(--muted);
+      list-style: none;
+    }
+
+    .features li::before {
+      content: "✓";
+      margin-right: 9px;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .product-card .button {
+      width: 100%;
+      margin-top: auto;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      padding: 27px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(17, 23, 32, 0.7);
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      border-radius: 13px;
+      color: #06110a;
+      background: var(--green);
+      font-weight: 900;
+    }
+
+    .step h3 {
+      margin-bottom: 7px;
+    }
+
+    .step p,
+    .faq p {
+      color: var(--muted);
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      max-width: 820px;
+      margin-inline: auto;
+    }
+
+    .faq {
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .faq p {
+      padding-top: 12px;
+    }
+
+    .notice {
+      margin-top: 34px;
+      padding: 18px 20px;
+      border: 1px solid rgba(255, 195, 81, 0.28);
+      border-radius: 14px;
+      color: #d8c8a6;
+      background: rgba(255, 195, 81, 0.06);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .toast {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 30;
+      padding: 14px 18px;
+      border: 1px solid rgba(98, 245, 155, 0.3);
+      border-radius: 13px;
+      color: var(--text);
+      background: #111820;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(16px);
+      transition: 220ms ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .products,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+
+      .hero-card {
+        min-height: 400px;
+      }
+
+      .product-card.featured {
+        transform: none;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .nav-links {
+        display: none;
+      }
+
+      .container {
+        width: min(100% - 28px, 1160px);
+      }
+
+      h1 {
+        font-size: 3.6rem;
+      }
+
+      .hero-card-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+
+    /* Red and black visual overhaul */
+    :root {
+      --bg: #050000;
+      --surface: #110607;
+      --surface-2: #1d090b;
+      --text: #fff7f7;
+      --muted: #bda8aa;
+      --green: #ff2a3f;
+      --green-dark: #a90017;
+      --border: rgba(255, 68, 87, 0.2);
+      --shadow: 0 28px 80px rgba(0, 0, 0, 0.62), 0 0 50px rgba(214, 0, 31, 0.08);
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 82% 8%, rgba(255, 25, 52, 0.19), transparent 28rem),
+        radial-gradient(circle at 4% 40%, rgba(139, 0, 18, 0.18), transparent 34rem),
+        linear-gradient(135deg, #020000 0%, #0b0203 50%, #020000 100%);
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.19;
+      background-image:
+        linear-gradient(rgba(255, 42, 63, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 42, 63, 0.08) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+    }
+
+    ::selection {
+      color: #fff;
+      background: #d6001f;
+    }
+
+    .nav {
+      background: rgba(5, 0, 0, 0.86);
+      border-bottom-color: rgba(255, 42, 63, 0.24);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .brand-icon {
+      color: #fff;
+      background: linear-gradient(135deg, #ff4153, #940014);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 0 35px rgba(255, 24, 52, 0.34);
+      transform: rotate(-4deg);
+    }
+
+    .nav-links a {
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: -7px;
+      height: 2px;
+      background: var(--green);
+      transition: right 180ms ease;
+    }
+
+    .nav-links a:hover::after {
+      right: 0;
+    }
+
+    .cart-button {
+      background: linear-gradient(145deg, #1d090b, #0c0304);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+    }
+
+    .cart-button:hover {
+      border-color: rgba(255, 42, 63, 0.58);
+      transform: translateY(-1px);
+    }
+
+    .cart-count,
+    .popular,
+    .step-number {
+      color: #fff;
+      background: linear-gradient(135deg, #ff3349, #a70017);
+      box-shadow: 0 0 24px rgba(255, 42, 63, 0.26);
+    }
+
+    .button-primary {
+      color: #fff;
+      background: linear-gradient(135deg, #ff3047, #a60017);
+      border: 1px solid rgba(255, 91, 108, 0.38);
+      box-shadow: 0 12px 38px rgba(216, 0, 31, 0.3);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 17px 45px rgba(216, 0, 31, 0.48), 0 0 20px rgba(255, 42, 63, 0.18);
+    }
+
+    .button-secondary {
+      background: linear-gradient(145deg, #170708, #0b0304);
+    }
+
+    .button-secondary:hover {
+      border-color: rgba(255, 42, 63, 0.48);
+      background: #21090c;
+      transform: translateY(-2px);
+    }
+
+    .eyebrow {
+      border-color: rgba(255, 42, 63, 0.38);
+      background: rgba(255, 42, 63, 0.09);
+      box-shadow: inset 0 0 20px rgba(255, 42, 63, 0.05);
+    }
+
+    h1 {
+      text-shadow: 0 12px 50px rgba(0, 0, 0, 0.75);
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #ff5365, #b00019);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: none;
+    }
+
+    .hero-card {
+      border-color: rgba(255, 42, 63, 0.32);
+      background:
+        linear-gradient(to top, rgba(7, 0, 1, 0.98), rgba(7, 0, 1, 0.16)),
+        linear-gradient(135deg, #2a090d, #0c0304 47%, #3b0710);
+      box-shadow: var(--shadow), inset 0 1px rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-card::before {
+      background: rgba(255, 24, 52, 0.22);
+      box-shadow: 0 0 80px rgba(255, 0, 36, 0.2);
+    }
+
+    .city-lines {
+      background:
+        linear-gradient(90deg, transparent 8%, #ff2a3f 8% 9%, transparent 9% 20%, #fff 20% 20.4%, transparent 20.4%),
+        linear-gradient(0deg, transparent 10%, rgba(255,255,255,.28) 10% 11%, transparent 11% 30%, rgba(255,42,63,.48) 30% 31%, transparent 31%);
+    }
+
+    .level-badge {
+      border: 1px solid rgba(255, 42, 63, 0.22);
+      background: rgba(255, 42, 63, 0.11);
+    }
+
+    .stat {
+      border-color: rgba(255, 42, 63, 0.18);
+      background: rgba(14, 2, 4, 0.8);
+    }
+
+    .product-card {
+      overflow: hidden;
+      border-color: rgba(255, 255, 255, 0.08);
+      background: linear-gradient(150deg, rgba(32, 8, 11, 0.97), rgba(7, 2, 3, 0.98));
+      transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+    }
+
+    .product-card::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      top: -120px;
+      right: -90px;
+      border-radius: 50%;
+      background: rgba(255, 42, 63, 0.16);
+      filter: blur(4px);
+    }
+
+    .product-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(255, 42, 63, 0.42);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4), 0 0 35px rgba(180, 0, 25, 0.09);
+    }
+
+    .product-card.featured {
+      border-color: rgba(255, 42, 63, 0.68);
+      box-shadow: 0 22px 65px rgba(0, 0, 0, 0.34), 0 0 35px rgba(255, 42, 63, 0.12);
+    }
+
+    .product-card.featured:hover {
+      transform: translateY(-13px);
+    }
+
+    .step,
+    .faq {
+      background: linear-gradient(145deg, rgba(24, 6, 8, 0.85), rgba(8, 2, 3, 0.9));
+      transition: border-color 180ms ease, transform 180ms ease;
+    }
+
+    .step:hover,
+    .faq:hover {
+      border-color: rgba(255, 42, 63, 0.4);
+    }
+
+    .step:hover {
+      transform: translateY(-4px);
+    }
+
+    .notice {
+      border-color: rgba(255, 69, 86, 0.3);
+      color: #d7b0b4;
+      background: rgba(164, 0, 22, 0.08);
+    }
+
+    .toast {
+      border-color: rgba(255, 42, 63, 0.42);
+      background: #170507;
+      box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55), 0 0 30px rgba(255, 42, 63, 0.12);
+    }
+
+    @media (max-width: 900px) {
+      .product-card.featured:hover {
+        transform: translateY(-7px);
+      }
+    }
+
+    .payment-options {
+      display: grid;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .product-card .payment-options .button {
+      margin-top: 0;
+      min-height: 52px;
+      padding-inline: 12px;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    /* Premium checkout experience */
+    .payment-options {
+      position: relative;
+      padding-top: 14px;
+    }
+
+    .payment-options::before {
+      content: "CHOOSE PAYMENT DESTINATION";
+      display: block;
+      margin-bottom: 2px;
+      color: #806b6e;
+      font-size: 0.64rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-align: center;
+    }
+
+    .checkout-trigger {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .checkout-trigger::after {
+      content: "→";
+      margin-left: 3px;
+      font-size: 1.08rem;
+      transition: transform 180ms ease;
+    }
+
+    .checkout-trigger:hover::after {
+      transform: translateX(4px);
+    }
+
+    .checkout-trigger::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,.13) 48%, transparent 70%);
+      transform: translateX(-140%);
+      transition: transform 500ms ease;
+    }
+
+    .checkout-trigger:hover::before {
+      transform: translateX(140%);
+    }
+
+    .checkout-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background: rgba(3, 0, 0, 0.82);
+      backdrop-filter: blur(16px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 200ms ease, visibility 200ms ease;
+    }
+
+    .checkout-modal.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .checkout-panel {
+      position: relative;
+      overflow: hidden;
+      width: min(520px, 100%);
+      padding: 28px;
+      border: 1px solid rgba(255, 53, 75, 0.4);
+      border-radius: 26px;
+      background: linear-gradient(145deg, rgba(34, 7, 11, 0.98), rgba(7, 1, 2, 0.99));
+      box-shadow: 0 35px 110px rgba(0, 0, 0, 0.75), 0 0 55px rgba(255, 29, 57, 0.13);
+      transform: translateY(18px) scale(0.97);
+      transition: transform 220ms ease;
+    }
+
+    .checkout-modal.open .checkout-panel {
+      transform: translateY(0) scale(1);
+    }
+
+    .checkout-panel::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      top: -150px;
+      right: -90px;
+      border-radius: 50%;
+      background: rgba(255, 35, 61, 0.22);
+      filter: blur(8px);
+      pointer-events: none;
+    }
+
+    .checkout-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .checkout-label {
+      color: var(--green);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .checkout-close {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      background: rgba(255,255,255,.04);
+      cursor: pointer;
+      font-size: 1.3rem;
+      line-height: 1;
+      transition: 160ms ease;
+    }
+
+    .checkout-close:hover {
+      border-color: var(--green);
+      background: rgba(255, 42, 63, 0.1);
+      transform: rotate(5deg);
+    }
+
+    .checkout-title {
+      margin-top: 9px;
+      font-size: clamp(1.9rem, 6vw, 2.65rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .checkout-summary {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+      margin: 24px 0 20px;
+      padding: 18px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 17px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .checkout-summary small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .checkout-summary strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 1.05rem;
+    }
+
+    .checkout-amount {
+      color: var(--green);
+      font-size: 2rem !important;
+      font-weight: 950;
+      letter-spacing: -0.05em;
+      text-shadow: 0 0 25px rgba(255, 42, 63, 0.24);
+    }
+
+    .checkout-rule {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: #c9b5b8;
+      font-size: 0.84rem;
+      line-height: 1.45;
+    }
+
+    .checkout-rule span {
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: #a90017;
+      font-size: 0.7rem;
+      font-weight: 900;
+    }
+
+    .recipient-heading {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 0.73rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .recipient-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .recipient-button {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 12px;
+      border: 1px solid rgba(255, 60, 81, 0.25);
+      border-radius: 16px;
+      color: #fff;
+      background: linear-gradient(145deg, rgba(49, 9, 14, 0.92), rgba(19, 3, 5, 0.95));
+      font-weight: 850;
+      transition: 180ms ease;
+    }
+
+    .recipient-button:hover {
+      border-color: rgba(255, 60, 81, 0.72);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 35px rgba(0,0,0,.35), 0 0 22px rgba(255, 42, 63, 0.1);
+    }
+
+    .cash-icon {
+      flex: 0 0 auto;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: linear-gradient(135deg, #ff344b, #970014);
+      box-shadow: 0 0 22px rgba(255, 42, 63, 0.18);
+      font-size: 1.15rem;
+      font-weight: 950;
+    }
+
+    .recipient-button small {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    .checkout-footer-note {
+      margin-top: 17px;
+      color: #806f72;
+      font-size: 0.72rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      .checkout-panel { padding: 22px; }
+      .recipient-grid { grid-template-columns: 1fr; }
+    }
+
+    .checkout-footer-note strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: #fff;
+      font-size: 0.82rem;
+      letter-spacing: 0.01em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon">DV</span>
+        D a s p y t e and vxvnx
+      </a>
+
+      <div class="nav-links">
+        <a href="#accounts">Accounts</a>
+        <a href="#process">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a class="cart-button" href="https://cash.app/$Vicdelgado57" target="_blank" rel="noopener noreferrer">Cash App $Vicdelgado57</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="dot"></span>
+            PC account marketplace
+          </div>
+
+          <h1>Enter Los Santos <span>ready.</span></h1>
+
+          <p class="hero-copy">
+            Browse GTA Online account packages made exclusively for PC, with clearly listed
+            ranks, balances, vehicles, unlocks, pricing, and delivery details.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#accounts">Browse Accounts</a>
+            <a class="button button-secondary" href="#process">How It Works</a>
+          </div>
+
+          <div class="trust-row">
+            <span>PC accounts only</span>
+            <span>Clear package details</span>
+            <span>No console listings</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="city-lines"></div>
+
+          <div class="hero-card-content">
+            <span class="level-badge">PC account package</span>
+            <h2>Executive Account</h2>
+
+            <div class="hero-card-stats">
+              <div class="stat">
+                <strong>Level 250</strong>
+                <small>Character rank</small>
+              </div>
+              <div class="stat">
+                <strong>$250M</strong>
+                <small>Listed balance</small>
+              </div>
+              <div class="stat">
+                <strong>75+</strong>
+                <small>Listed vehicles</small>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="accounts">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Choose a PC account package</h2>
+          <p>
+            Every account package shown below is for PC only. Console accounts and
+            console services are not available on this storefront.
+          </p>
+        </div>
+
+        <div class="products">
+          <article class="product-card">
+            <div class="product-kicker">Starter</div>
+            <h3>Street Package</h3>
+            <div class="price">$19 <small>one time</small></div>
+
+            <ul class="features">
+              <li>Level 100 listing</li>
+              <li>$50M listed balance</li>
+              <li>20+ listed vehicles</li>
+              <li>PC platform only</li>
+            </ul>
+
+            <div class="payment-options"><button class="button button-secondary checkout-trigger" type="button" data-amount="19" data-wait="30 minutes to 1 hour">Secure checkout - $19</button></div>
+          </article>
+
+          <article class="product-card featured">
+            <span class="popular">Popular</span>
+            <div class="product-kicker">Executive</div>
+            <h3>City Package</h3>
+            <div class="price">$39 <small>one time</small></div>
+
+            <ul class="features">
+              <li>Level 250 listing</li>
+              <li>$250M listed balance</li>
+              <li>75+ listed vehicles</li>
+              <li>PC platform only</li>
+            </ul>
+
+            <div class="payment-options"><button class="button button-primary checkout-trigger" type="button" data-amount="39" data-wait="2 to 3 hours">Secure checkout - $39</button></div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-kicker">Premium</div>
+            <h3>Empire Package</h3>
+            <div class="price">$69 <small>one time</small></div>
+
+            <ul class="features">
+              <li>Level 500 listing</li>
+              <li>$500M listed balance</li>
+              <li>100+ listed vehicles</li>
+              <li>PC platform only</li>
+            </ul>
+
+            <div class="payment-options"><button class="button button-secondary checkout-trigger" type="button" data-amount="69" data-wait="1 to 2 days">Secure checkout - $69</button></div>
+          </article>
+        </div>
+
+                <div class="notice">
+          GTA and GTA Online are trademarks of their respective owner. This
+          independent template is not affiliated with or endorsed by Rockstar
+          Games or Take-Two Interactive. Account modification or resale may violate
+          game or platform terms and can result in suspension or loss of access.
+        </div>
+
+        <div class="notice">
+          Pay the <strong>exact listed package price</strong> to either <strong>$Vicdelgado57</strong> or <strong>$AlexLuna56</strong>. Do not split one order between both accounts. Incorrect or partial payments are not accepted. Payment verification and fulfillment are manual; this page cannot independently confirm a completed payment.
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How it works</h2>
+          <p>
+            Select a package, continue to Cash App, and send the exact listed amount to $Vicdelgado57. Include the package name in the payment note.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">1</div>
+            <h3>Select a package</h3>
+            <p>Choose a PC account package and review its contents, region, and requirements.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">2</div>
+            <h3>Complete checkout</h3>
+            <p>Choose one approved Cash App recipient, then send the exact package price shown. Orders with an incorrect amount are not accepted.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">3</div>
+            <h3>Receive delivery</h3>
+            <p>After payment is manually verified, The Street Package is delivered within 30 minutes to 1 hour, the City Package within 2 to 3 hours, and the Empire Package within 1 to 2 days.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Frequently asked questions</h2>
+          <p>Keep these answers accurate and consistent with your real policies.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq">
+            <summary>Which platform is supported?</summary>
+            <p>
+              This storefront supports PC account packages only. Console accounts
+              and console services are not offered.
+            </p>
+          </details>
+
+          <details class="faq">
+            <summary>Are accounts guaranteed against bans?</summary>
+            <p>
+              No seller can guarantee that a modified account will never be
+              restricted or suspended. State the risk prominently before checkout.
+            </p>
+          </details>
+
+          <details class="faq">
+            <summary>What is the refund policy?</summary>
+            <p>
+              Add your actual policy, eligibility period, exclusions, and support
+              contact details here before accepting payments.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> D a s p y t e and vxvnx</span>
+      <span>PC account marketplace</span>
+    </div>
+  </footer>
+
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="checkout-panel">
+      <div class="checkout-topline">
+        <span class="checkout-label">Secure Cash App checkout</span>
+        <button class="checkout-close" id="checkoutClose" type="button" aria-label="Close checkout">×</button>
+      </div>
+      <h2 class="checkout-title" id="checkoutTitle">Complete your order</h2>
+      <div class="checkout-summary">
+        <div><small>Selected package</small><strong id="checkoutPackage">Package</strong></div>
+        <strong class="checkout-amount" id="checkoutAmount">$0</strong>
+      </div>
+      <div class="checkout-rule"><span>1</span><p>Choose one approved recipient below. Do not divide a single order between accounts.</p></div>
+      <div class="checkout-rule"><span>2</span><p>Send the exact amount shown and include the package name in your Cash App note.</p></div>
+      <div class="recipient-heading">Choose payment destination</div>
+      <div class="recipient-grid">
+        <a class="recipient-button" href="https://cash.app/$Vicdelgado57" target="_blank" rel="noopener noreferrer"><span class="cash-icon">$</span><span>$Vicdelgado57<small id="vicPayText">Pay exact amount</small></span></a>
+        <a class="recipient-button" href="https://cash.app/$AlexLuna56" target="_blank" rel="noopener noreferrer"><span class="cash-icon">$</span><span>$AlexLuna56<small id="alexPayText">Pay exact amount</small></span></a>
+      </div>
+      <p class="checkout-footer-note"><strong id="checkoutWait">Estimated delivery wait: 30 minutes to 1 hour after payment is verified.</strong><br>You will finish payment in Cash App. Orders are fulfilled only after manual payment verification.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+  <script>
+    const checkoutModal = document.getElementById("checkoutModal");
+    const checkoutClose = document.getElementById("checkoutClose");
+    const checkoutPackage = document.getElementById("checkoutPackage");
+    const checkoutAmount = document.getElementById("checkoutAmount");
+    const checkoutWait = document.getElementById("checkoutWait");
+    const vicPayText = document.getElementById("vicPayText");
+    const alexPayText = document.getElementById("alexPayText");
+
+    document.querySelectorAll(".checkout-trigger").forEach((button) => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".product-card");
+        const packageName = card.querySelector("h3").textContent.trim();
+        const amount = button.dataset.amount;
+        checkoutPackage.textContent = packageName;
+        checkoutAmount.textContent = "$" + amount;
+        checkoutWait.textContent = "Estimated delivery wait: " + button.dataset.wait + " after payment is verified.";
+        vicPayText.textContent = "Send exactly $" + amount;
+        alexPayText.textContent = "Send exactly $" + amount;
+        checkoutModal.classList.add("open");
+        checkoutModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        checkoutClose.focus();
+      });
+    });
+
+    function closeCheckout() {
+      checkoutModal.classList.remove("open");
+      checkoutModal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    checkoutClose.addEventListener("click", closeCheckout);
+    checkoutModal.addEventListener("click", (event) => {
+      if (event.target === checkoutModal) closeCheckout();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeCheckout();
+    });
+  </script>
+
+</body>
+</html>
